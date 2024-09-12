@@ -1,13 +1,21 @@
-import CodeString from "@/components/code/CodeString"
+import Hero from "@/components/home/Hero";
+import Introcuccion from "@/components/home/Introcuccion";
+import Descripcion from "@/components/home/Descripcion";
+import Contenedores from "@/components/home/Contenedores";
+import Comparacion from "@/components/home/Comparacion";
+
 function HomePage() {
   return (
-    <div>
-      <section className="w-full flex justify-center items-center flex-col">
-        <h1 className="text-3xl font-semibold">Home Page</h1>
-        <CodeString code={"npm install code "} />
+    <div className="w-full max-w-4xl px-20">
+      <Hero />
+      <section className="my-10 space-y-10">
+        <Introcuccion />
+        <Descripcion />
+        <Contenedores />
+        <Comparacion />
       </section>
     </div>
-  )
+  );
 }
 
-export default HomePage
+export default HomePage;
