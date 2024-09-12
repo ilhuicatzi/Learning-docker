@@ -12,7 +12,7 @@ function CodeString({code}:{code:string}) {
   };
   return (
     <pre className="dark:bg-slate-900 bg-slate-100 my-2 rounded-md flex justify-between w-full max-w-xl">
-      <code className="font-inconsolata text-sm select-all pl-4 py-2 text-slate-800 dark:text-slate-100">
+      <code className="font-inconsolata select-all pl-4 py-2 text-slate-800 dark:text-slate-100">
         {code}
       </code>
       <div className="flex justify-end items-start">
