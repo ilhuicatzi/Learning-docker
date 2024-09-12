@@ -7,6 +7,7 @@ import './index.css'
 
 // fonts
 import '@fontsource-variable/inconsolata';
+import '@fontsource-variable/noto-sans';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
