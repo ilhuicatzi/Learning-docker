@@ -11,8 +11,8 @@ function CodeString({code}:{code:string}) {
     navigator.clipboard.writeText(code);
   };
   return (
-    <pre className="dark:bg-slate-900 bg-slate-100 my-2 rounded-md flex justify-between w-full max-w-xl">
-      <code className="font-inconsolata select-all pl-4 py-2 text-slate-800 dark:text-slate-100">
+    <pre className="dark:bg-slate-900 bg-slate-100 my-2 rounded-md flex justify-between w-full max-w-2xl">
+      <code className="overflow-x-auto font-inconsolata select-all pl-4 py-2 text-slate-800 dark:text-slate-100">
         {code}
       </code>
       <div className="flex justify-end items-start">
@@ -20,6 +20,7 @@ function CodeString({code}:{code:string}) {
           <Tooltip>
             <TooltipTrigger asChild>
               <button
+              aria-label="copy"
                 onClick={copyToClipboard}
                 className="bg-slate-200 hover:bg-slate-300 dark:bg-slate-800 dark:hover:bg-slate-700 p-1 rounded-md"
               >

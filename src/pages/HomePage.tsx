@@ -6,7 +6,7 @@ import Comparacion from "@/components/home/Comparacion";
 
 function HomePage() {
   return (
-    <div className="w-full max-w-4xl px-20">
+    <main className="grid space-y-16 px-4 sm:px-20 w-full max-w-4xl">
       <Hero />
       <section className="my-10 space-y-10">
         <Introcuccion />
@@ -14,7 +14,7 @@ function HomePage() {
         <Contenedores />
         <Comparacion />
       </section>
-    </div>
+    </main>
   );
 }
 
